@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea: Primera Petición GET</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 { color: #333; }
+        .box {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th { background-color: #eee; }
+        img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Reporte: Primera Petición GET</h1>
+
+    <div class="box">
+        <h2>1. ¿Qué pasó? (¿Se conectó o no?)</h2>
+        <p><strong>Sí se conectó correctamente.</strong> El código envió la petición al servidor en Render y este respondió con el estado <strong>200 OK</strong> a través de HTTPS.</p>
+        <p><strong>Tiempo de respuesta:</strong> Tardó 13.6 segundos (13,610 ms) debido a que el servidor de Render estaba inactivo y tardó unos segundos en "despertar".</p>
+    </div>
+
+    <div class="box">
+        <h2>2. ¿Qué elementos se obtuvieron?</h2>
+        <p>Se obtuvo un arreglo en formato JSON con <strong>3 talleres</strong>:</p>
+        <table>
+            <tr>
+                <th>Taller</th>
+                <th>Instructor</th>
+                <th>Fecha</th>
+                <th>Cupo</th>
+            </tr>
+            <tr>
+                <td>Introducción a Python</td>
+                <td>Ing. María López</td>
+                <td>2026-08-10</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Fundamentos de Redes</td>
+                <td>Ing. Carlos Ramírez</td>
+                <td>2026-08-12</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Diseño de Bases de Datos</td>
+                <td>Ing. Ana Torres</td>
+                <td>2026-08-14</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="box">
+        <h2>3. Captura de la terminal</h2>
+        <!-- Reemplaza "captura.png" por la imagen que tomaste -->
+        <img src="../captura1.png" alt="Captura de pantalla de la terminal">
+    </div>
+
+</body>
+</html>
